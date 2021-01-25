@@ -1,0 +1,357 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-body bg-primary-300">
+
+    <div>
+        <div class="px-2 bg-white fixed w-full z-10 shadow-lg">
+            <nav>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <img src="img/logo.png" class="h-15 w-36 md:w-40">
+                    </div>
+                    <div class="flex justify-between items-center mt-1">
+                        <input id="" class="p-2 rounded text-sm bg-primary-200 w-25 md:w-96" type="text"
+                            placeholder="Search a product or category">
+                        <a href="" class="bg-primary-100 px-4 py-2 m-2 rounded text-white text-sm">Search</a>
+                    </div>
+                    <div class="px-4 cursor-pointer lg:hidden" id="burger">
+                        <svg class="w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </div>
+
+                    <div class="flex justify-center md:justify-end">
+                        <div class="hidden lg:flex md:gap-5 md:mr-1">
+                            <a href="#">
+                                <svg class="w-7 text-primary-100" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="w-7 text-primary-100" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+
+        <main class="px-3 py-2 pt-16">
+
+            <div class="flex items-start">
+                <div class="lg:w-1/4 bg-white rounded lg:pl-3">
+                    <ul class="mt-2 hidden lg:block p-3">
+                        <li class="py-1">
+                            <a href="">
+                                <span>Food and Spices</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="">
+                                <span>Drinks & Beverages</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="">
+                                <span>Best Deals</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="">
+                                <span>Pasta & Noodle</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="">
+                                <span>Vegetables and Fruits</span>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="">
+                                <span>Swallow & Flour</span>
+                            </a>
+                        </li>
+                        <li class="mb-2 py-1">
+                            <a href="">
+                                <span>Chicken and Fish</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!--test-->
+
+                <div id="menu" class="fixed left-0 top-0 h-full w-3/4 bg-white z-10 md:hidden translate-x-0 p-3">
+                    <div class="flex justify-center mt-2 mb-2">
+                        <img src="img/logo.png" class="h-15 w-40">
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="mt-2 ml-5">
+                        <h2 class="text-primary-100 font-semibold">ACCOUNT</h2>
+                        <a href="" class="p-2">
+                            <div class="flex items-center gap-4 px-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg>
+                                <span>Login</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="mt-3">
+                        <div class="ml-5">
+                            <span class="text-primary-100">FOOD CATEGORIES</span>
+                        </div>
+                        <div class="mt-2 ml-10">
+                            <ul>
+                                <li class="py-1">
+                                    <a href="">
+                                        <span>Food and Spices</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="">
+                                        <span>Drinks & Beverages</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="">
+                                        <span>Best Deals</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="">
+                                        <span>Pasta & Noodle</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>Vegetables and Fruits</span>
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="">
+                                        <span>Swallow & Flour</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2 py-1">
+                                    <a href="">
+                                        <span>Chicken and Fish</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+
+
+
+                <!--test-->
+
+
+                <div class="w-full lg:w-3/4 lg:ml-2">
+                    <img src="img/foody.jpeg" class="w-full h-80 lg:h-96 mb-2 object-cover rounded">
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <div class="bg-primary-100 flex justify-between rounded p-3">
+                    <h3 class="text-white font-semibold ml-2">Drink and Beverages</h3>
+                    <a href="" class="text-white font-semibold mr-2">SEE ALL ></a>
+                </div>
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 mt-2  bg-white">
+                    <!--cards-->
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Pepsi</span>
+                            <span class="block font-bold">₦ 100.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Chivita</span>
+                            <span class="block font-bold">₦ 300.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Coca-Cola (Big)</span>
+                            <span class="block font-bold">₦ 200.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Coke Zero</span>
+                            <span class="block font-bold">₦ 100.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <div class="bg-primary-100 flex justify-between rounded p-3">
+                    <h3 class="text-white font-semibold ml-2">Best Deals</h3>
+                    <a href="" class="text-white font-semibold mr-2">SEE ALL ></a>
+                </div>
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 mt-2 bg-white">
+                    <!--cards-->
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Power Pasta</span>
+                            <span class="block font-bold">₦ 150.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Mamador</span>
+                            <span class="block font-bold">₦ 300.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Chicken Flavour</span>
+                            <span class="block font-bold">₦ 100.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl">
+                        <img src="img/curry.jpeg" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="mt-3 text-center">
+                            <span>Kings Oil</span>
+                            <span class="block font-bold">₦ 40.0</span>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="flex justify-center text-white gap-2">
+                                <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                                <h3>Add to Cart</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
